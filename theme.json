@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{ "slug": "base", "color": "#FFFFFF", "name": "White" },
+				{ "slug": "contrast", "color": "#0A1428", "name": "Ink" },
+				{ "slug": "accent-1", "color": "#0021A5", "name": "Gator Blue" },
+				{ "slug": "accent-2", "color": "#FA4616", "name": "Gator Orange" },
+				{ "slug": "accent-3", "color": "#001A4D", "name": "Deep Blue" },
+				{ "slug": "accent-4", "color": "#5B6470", "name": "Slate" },
+				{ "slug": "accent-5", "color": "#EEF1F6", "name": "Mist" },
+				{ "slug": "accent-6", "color": "color-mix(in srgb, currentColor 20%, transparent)", "name": "Accent 6" }
+			]
+		},
+		"typography": {
+			"fluid": true
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"elements": {
+			"heading": {
+				"typography": { "fontWeight": "800", "letterSpacing": "-0.01em" }
+			},
+			"button": {
+				"color": {
+					"background": "var:preset|color|accent-2",
+					"text": "var:preset|color|contrast"
+				},
+				"typography": { "fontWeight": "700", "textTransform": "uppercase", "letterSpacing": "0.04em" },
+				"border": { "radius": "4px" },
+				":hover": {
+					"color": {
+						"background": "var:preset|color|accent-1",
+						"text": "var:preset|color|base"
+					}
+				}
+			},
+			"link": {
+				"color": { "text": "var:preset|color|accent-1" },
+				":hover": { "typography": { "textDecoration": "underline" } }
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Land O' Lakes Gators — custom child-theme styling
+   ========================================================================== */
+
+/* --- Eyebrow / section label ------------------------------------------- */
+.gators-eyebrow {
+	margin: 0;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	color: var(--wp--preset--color--accent-2);
+}
+
+/* --- Jersey number ------------------------------------------------------ */
+.gators-jersey {
+	margin: 0;
+	line-height: 1;
+	color: var(--wp--preset--color--accent-2);
+}
+.gators-jersey::before {
+	content: "#";
+	opacity: 0.55;
+}
+
+/* --- Stat pills (position, grade, role, etc.) -------------------------- */
+.gators-pill {
+	display: inline-block;
+	margin: 0;
+	padding: 0.3rem 0.85rem;
+	border-radius: 999px;
+	background: var(--wp--preset--color--accent-5);
+	color: var(--wp--preset--color--accent-3);
+	font-size: 0.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+.gators-pill--num {
+	background: var(--wp--preset--color--accent-1);
+	color: var(--wp--preset--color--base);
+}
+.gators-pill--num::before {
+	content: "#";
+	opacity: 0.6;
+}
+
+/* --- Sponsorship level badge ------------------------------------------- */
+.gators-level {
+	display: inline-block;
+	margin: 0;
+	padding: 0.35rem 0.9rem;
+	border-radius: 4px;
+	background: var(--wp--preset--color--accent-1);
+	color: var(--wp--preset--color--base);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+/* --- Cards (roster / staff / sponsor grids) ---------------------------- */
+.gators-card {
+	height: 100%;
+	border-radius: 12px;
+	border: 1px solid color-mix(in srgb, var(--wp--preset--color--accent-4) 25%, transparent);
+	transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.gators-card:hover {
+	transform: translateY(-4px);
+	border-color: var(--wp--preset--color--accent-1);
+	box-shadow: 0 14px 32px -14px rgba(12, 59, 34, 0.45);
+}
+.gators-card .wp-block-post-title {
+	margin-top: 0.75rem;
+	margin-bottom: 0.25rem;
+}
+.gators-card .wp-block-post-title a {
+	text-decoration: none;
+	color: var(--wp--preset--color--contrast);
+}
+.gators-card .wp-block-post-title a:hover {
+	color: var(--wp--preset--color--accent-1);
+}
+
+/* Featured-image area: rounded, with a green tint as a graceful fallback
+   until a real player/sponsor photo is uploaded. */
+.gators-card .wp-block-post-featured-image,
+.gators-figure .wp-block-post-featured-image {
+	margin: 0;
+	border-radius: 8px;
+	overflow: hidden;
+	background: color-mix(in srgb, var(--wp--preset--color--accent-1) 12%, var(--wp--preset--color--base));
+}
+
+/* --- Player hero (single player) --------------------------------------- */
+.gators-hero {
+	border-radius: 16px;
+}
+.gators-hero .wp-block-post-title {
+	margin: 0;
+}

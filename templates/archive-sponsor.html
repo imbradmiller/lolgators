@@ -1,0 +1,60 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--60)">
+
+	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"clamp(2rem, 5vw, 3.5rem)","right":"clamp(1.5rem, 4vw, 3rem)","bottom":"clamp(2rem, 5vw, 3.5rem)","left":"clamp(1.5rem, 4vw, 3rem)"}},"border":{"radius":"16px"}},"backgroundColor":"accent-1","textColor":"base","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignwide has-base-color has-accent-1-background-color has-text-color has-background" style="border-radius:16px;padding-top:clamp(2rem, 5vw, 3.5rem);padding-right:clamp(1.5rem, 4vw, 3rem);padding-bottom:clamp(2rem, 5vw, 3.5rem);padding-left:clamp(1.5rem, 4vw, 3rem)">
+		<!-- wp:paragraph {"align":"center","className":"gators-eyebrow"} -->
+		<p class="has-text-align-center gators-eyebrow">Thank You</p>
+		<!-- /wp:paragraph -->
+		<!-- wp:heading {"textAlign":"center","level":1,"textColor":"base"} -->
+		<h1 class="wp-block-heading has-text-align-center has-base-color has-text-color">Our Sponsors</h1>
+		<!-- /wp:heading -->
+		<!-- wp:paragraph {"align":"center"} -->
+		<p class="has-text-align-center">Local businesses that make Gators football possible.</p>
+		<!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
+	<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+
+	<!-- wp:query {"queryId":23,"query":{"perPage":48,"pages":0,"offset":0,"postType":"sponsor","order":"asc","orderBy":"title","inherit":false},"align":"wide"} -->
+	<div class="wp-block-query alignwide">
+		<!-- wp:post-template {"layout":{"type":"grid","minimumColumnWidth":"18rem"}} -->
+			<!-- wp:group {"className":"gators-card","style":{"spacing":{"padding":{"top":"1.25rem","right":"1.25rem","bottom":"1.5rem","left":"1.25rem"},"blockGap":"0.75rem"}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group gators-card has-base-background-color has-background" style="padding-top:1.25rem;padding-right:1.25rem;padding-bottom:1.5rem;padding-left:1.25rem">
+				<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9","scale":"contain"} /-->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+				<div class="wp-block-group">
+					<!-- wp:post-title {"isLink":true,"level":3,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} /-->
+					<!-- wp:paragraph {"className":"gators-level","metadata":{"bindings":{"content":{"source":"core/post-meta","args":{"key":"sponsorship_level"}}}}} -->
+					<p class="gators-level">Level</p>
+					<!-- /wp:paragraph -->
+				</div>
+				<!-- /wp:group -->
+				<!-- wp:buttons -->
+				<div class="wp-block-buttons">
+					<!-- wp:button {"className":"is-style-outline","metadata":{"bindings":{"url":{"source":"core/post-meta","args":{"key":"website"}}}}} -->
+					<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" target="_blank" rel="noreferrer noopener">Visit Website</a></div>
+					<!-- /wp:button -->
+				</div>
+				<!-- /wp:buttons -->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-no-results -->
+			<!-- wp:paragraph -->
+			<p>No sponsors have been added yet.</p>
+			<!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+	</div>
+	<!-- /wp:query -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

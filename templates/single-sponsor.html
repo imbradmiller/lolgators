@@ -1,0 +1,41 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--60)">
+
+	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"clamp(2rem, 5vw, 3.5rem)","right":"clamp(1.5rem, 4vw, 3rem)","bottom":"clamp(2rem, 5vw, 3.5rem)","left":"clamp(1.5rem, 4vw, 3rem)"}},"border":{"radius":"16px"}},"backgroundColor":"accent-5","layout":{"type":"constrained","contentSize":"560px"}} -->
+	<div class="wp-block-group alignwide has-accent-5-background-color has-background" style="border-radius:16px;padding-top:clamp(2rem, 5vw, 3.5rem);padding-right:clamp(1.5rem, 4vw, 3rem);padding-bottom:clamp(2rem, 5vw, 3.5rem);padding-left:clamp(1.5rem, 4vw, 3rem)">
+
+		<!-- wp:paragraph {"align":"center","className":"gators-eyebrow"} -->
+		<p class="has-text-align-center gators-eyebrow">Proud Sponsor</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:post-title {"textAlign":"center","level":1} /-->
+
+		<!-- wp:group {"style":{"spacing":{"margin":{"top":"0.5rem","bottom":"1.5rem"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+		<div class="wp-block-group" style="margin-top:0.5rem;margin-bottom:1.5rem">
+			<!-- wp:paragraph {"className":"gators-level","metadata":{"bindings":{"content":{"source":"core/post-meta","args":{"key":"sponsorship_level"}}}}} -->
+			<p class="gators-level">Sponsor</p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:post-featured-image {"aspectRatio":"16/9","scale":"contain","style":{"border":{"radius":"8px"}}} /-->
+
+		<!-- wp:post-content {"align":"full","layout":{"type":"constrained"}} /-->
+
+		<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+		<div class="wp-block-buttons">
+			<!-- wp:button {"metadata":{"bindings":{"url":{"source":"core/post-meta","args":{"key":"website"}}}}} -->
+			<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" target="_blank" rel="noreferrer noopener">Visit Website</a></div>
+			<!-- /wp:button -->
+		</div>
+		<!-- /wp:buttons -->
+
+	</div>
+	<!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

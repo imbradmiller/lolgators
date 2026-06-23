@@ -1,0 +1,15 @@
+/*
+Theme Name: Land O' Lakes Gators
+Theme URI: https://lolgators.local
+Description: Custom full-site-editing child theme of Twenty Twenty-Five for the Land O' Lakes Gators little league football team. Adds team branding plus templates for Players, Coaching Staff, and Sponsors.
+Author: Brad Miller
+Template: twentytwentyfive
+Version: 0.1.0
+Requires at least: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: lol-gators
+*/
+
+/* Block themes load their styles via theme.json and assets/css/gators.css (enqueued in functions.php). */
