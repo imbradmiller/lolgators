@@ -5,7 +5,7 @@ A full-site-editing (block) **child theme of [Twenty Twenty-Five](https://wordpr
 ## Features
 
 - **Official Florida Gators palette** — Blue `#0021A5`, Orange `#FA4616` — set in `theme.json`, overriding the parent's color slugs so the whole site re-skins from one place.
-- **Custom team homepage** (`templates/front-page.html`) — full-bleed gradient hero plus featured Players, Coaching Staff, and Sponsors sections.
+- **"Team Home" page template** (`templates/team-home.html`) — a full-width content wrapper (registered in `theme.json` → `customTemplates`) used for the static homepage. The homepage design itself (full-bleed gradient hero plus Sponsors, Players, and Coaching Staff sections) is built with blocks in the **Home page's content**, so it's edited in the Page editor.
 - **FSE templates** for three custom post types — single + archive views for Players, Coaching Staff, and Sponsors.
 - Custom field values render through the **Block Bindings API** (`core/post-meta`).
 

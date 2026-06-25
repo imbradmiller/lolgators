@@ -47,5 +47,8 @@
 				":hover": { "typography": { "textDecoration": "underline" } }
 			}
 		}
-	}
+	},
+	"customTemplates": [
+		{ "name": "team-home", "title": "Team Home", "postTypes": [ "page" ] }
+	]
 }
